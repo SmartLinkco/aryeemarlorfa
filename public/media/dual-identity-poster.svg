@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Boardroom and glasshouse poster">
+  <rect width="600" height="720" fill="#1c2822"/>
+  <rect x="600" width="600" height="720" fill="#d7e6d6"/>
+  <g stroke="#f3eee6" stroke-opacity="0.35" fill="none">
+    <path d="M120 0 V720 M200 0 V720 M280 0 V720"/>
+  </g>
+  <ellipse cx="300" cy="180" rx="70" ry="70" fill="#e7d7b8" opacity="0.45"/>
+  <path d="M120 520 H470" stroke="#c4a574" stroke-opacity="0.6"/>
+  <text x="48" y="80" fill="#f3eee6" font-family="Georgia, serif" font-size="28">Boardroom</text>
+  <g fill="#24382e">
+    <path d="M900 640 C 890 500, 930 420, 900 300 C 870 200, 910 120, 900 60" fill="none" stroke="#24382e" stroke-width="3"/>
+    <path d="M900 460 C 780 420, 720 340, 760 260 C 820 320, 870 390, 900 450 Z"/>
+    <path d="M910 360 C 1020 320, 1080 240, 1040 170 C 980 230, 940 300, 910 355 Z"/>
+  </g>
+  <text x="640" y="80" fill="#24382e" font-family="Georgia, serif" font-size="28">Glasshouse</text>
+  <text x="48" y="680" fill="#f3eee6" font-family="Georgia, serif" font-size="22">Two rooms. One practice of attention.</text>
+</svg>
