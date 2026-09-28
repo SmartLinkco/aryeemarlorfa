@@ -8,7 +8,7 @@ import { LeafMark } from "@/components/LeafMark";
 export function Hero() {
   return (
     <section className="overflow-x-clip border-b border-line">
-      <div className="mx-auto grid w-full max-w-[1200px] items-center gap-6 px-5 py-8 md:grid-cols-12 md:gap-10 md:px-10 md:py-14">
+      <div className="mx-auto grid w-full max-w-[1200px] items-center gap-6 px-5 pb-0 pt-8 md:grid-cols-12 md:gap-10 md:px-10 md:py-14">
         <div className="min-w-0 md:col-span-6">
           <p className="flex items-center gap-2 text-[10px] uppercase tracking-[0.16em] text-leaf sm:text-[11px] sm:tracking-[0.22em]">
             <LeafMark className="h-4 w-4 shrink-0" />

@@ -16,7 +16,7 @@ export default function HomePage() {
       <Hero />
 
       <section className="border-b border-line" aria-labelledby="pillars-title">
-        <div className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-16">
+        <div className="mx-auto max-w-[1200px] px-5 pb-10 pt-6 md:px-10 md:py-16">
           <h2 id="pillars-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
             Four rooms, one practice
           </h2>
