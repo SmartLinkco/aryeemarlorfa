@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const site = {
-  name: "Ava Reed",
-  practice: "Reed Advisory",
-  url: "https://avareed.example",
-  email: "hello@avareed.example",
+  name: "Malorfa",
+  practice: "Malorfa",
+  url: "https://malorfa.example",
+  email: "hello@malorfa.example",
   description:
-    "Personal brand of Ava Reed — a fictional advisor in corporate risk and insurance, plant-tropist, solo travel writer, and published author.",
+    "Malorfa — corporate risk and insurance advisory, a plant-tropist practice, solo travel, and books, in one brand.",
   disclaimer:
-    "Ava Reed and Reed Advisory are fictional placeholders for this website prototype. Nothing here is insurance advice, a solicitation, or a claim of licensure.",
+    "Malorfa is a brand site for advisory conversations, plants, travel, and books. Nothing here is insurance advice, a solicitation, or a claim of licensure.",
 } as const;
 
 export const nav = [

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { nav, site } from "@/lib/site";
@@ -13,7 +14,13 @@ export function SiteFooter() {
     <footer className="bg-moss text-cream">
       <div className="mx-auto grid max-w-[1200px] gap-10 px-5 py-12 md:grid-cols-12 md:px-10 md:py-16">
         <div className="md:col-span-5">
-          <p className="font-serif text-3xl tracking-tight">Ava Reed</p>
+          <Image
+            src="/brand/malorfa-logo.png"
+            alt="Malorfa"
+            width={559}
+            height={136}
+            className="h-9 w-auto bg-paper px-2 py-1"
+          />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-sage">
             Notes on risk, travel, books & plants. A private letter, occasionally, from the same desk as the advisory work.
           </p>

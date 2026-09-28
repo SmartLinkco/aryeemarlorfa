@@ -3,6 +3,7 @@
 import { FormEvent, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { topics, type Topic } from "@/lib/content";
+import { site } from "@/lib/site";
 
 const allowed = new Set(topics.map((topic) => topic.value));
 
@@ -117,7 +118,7 @@ export function ContactForm() {
         {done && (
           <p role="status" className="text-sm leading-relaxed text-moss">
             Thank you, {name.trim()}. Your {topicLabel.toLowerCase()} note stayed in this browser. Nothing was emailed.
-            When this brand is real, the form can be wired to {`hello@avareed.example`}.
+            When this brand is real, the form can be wired to {site.email}.
           </p>
         )}
       </form>
@@ -145,8 +146,8 @@ export function ContactForm() {
         )}
         <p className="mt-8 text-sm">
           Or write directly:{" "}
-          <a className="inline-flex min-h-11 items-center underline decoration-ink/30 underline-offset-4" href="mailto:hello@avareed.example">
-            hello@avareed.example
+          <a className="inline-flex min-h-11 items-center underline decoration-ink/30 underline-offset-4" href={`mailto:${site.email}`}>
+            {site.email}
           </a>
         </p>
       </aside>

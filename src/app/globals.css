@@ -194,13 +194,8 @@ button:hover .leaf-rustle {
   letter-spacing: -0.02em;
 }
 
-/* Phones and coarse pointers: keep the picture, drop hover-only motion and scroll tricks. */
+/* Phones and coarse pointers: drop hover-only motion. Plant growth stays on. */
 @media (max-width: 767px), (hover: none) {
-  .scroll-leaf {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
   .parallax-panel,
   .parallax-panel:hover {
     transform: none !important;
@@ -239,11 +234,6 @@ button:hover .leaf-rustle {
 
   .stem-draw {
     stroke-dashoffset: 0 !important;
-  }
-
-  .scroll-leaf {
-    opacity: 1 !important;
-    transform: none !important;
   }
 
   .parallax-panel {

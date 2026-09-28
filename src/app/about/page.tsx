@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { timeline } from "@/lib/content";
@@ -6,7 +7,7 @@ import { pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "About",
   description:
-    "The story of Ava Reed, a fictional advisor, plant-tropist, solo traveler, and author — one practice of attention across four rooms.",
+    "The story of Malorfa, a fictional advisor, plant-tropist, solo traveler, and author — one practice of attention across four rooms.",
   path: "/about",
 });
 
@@ -22,10 +23,10 @@ export default function AboutPage() {
       <article className="mx-auto grid max-w-[1200px] gap-8 px-5 py-10 md:grid-cols-12 md:gap-12 md:px-10 md:py-16">
         <div className="prose-reed md:col-span-7">
           <p>
-            Ava Reed is a placeholder name for a real kind of person: someone whose days include board papers and watering cans, departure boards and manuscripts. The brand is built so those facts can share a typeface.
+            Malorfa is a placeholder name for a real kind of person: someone whose days include board papers and watering cans, departure boards and manuscripts. The brand is built so those facts can share a typeface.
           </p>
           <p>
-            The advisory work is corporate risk and insurance — not as a product shelf, but as a conversation about what an organization is willing to carry. In this prototype that practice is called Reed Advisory. It is fictional. It does not hold a license, a carrier appointment, or a client list.
+            The advisory work is corporate risk and insurance — not as a product shelf, but as a conversation about what an organization is willing to carry. The practice is fictional. It does not hold a license, a carrier appointment, or a client list.
           </p>
           <p>
             Plants came in through the side door and refused to remain decorative. To be a plant-tropist, in the sense used here, is to be oriented toward living green things: to notice lean, thirst, and recovery. It is a private practice. It is not a charity, a fund, or a volunteer program.
@@ -37,21 +38,20 @@ export default function AboutPage() {
             The books hold the rest still long enough to be reread. Placeholder Press, the imprint named on the covers, is part of the fiction — a shelf waiting for the owner of this site to replace it with the true one.
           </p>
         </div>
-        <aside className="mx-auto w-full max-w-[16rem] md:col-span-4 md:col-start-9 md:mx-0 md:max-w-none">
-          <p className="text-[11px] uppercase tracking-[0.2em] text-leaf">Replace with a portrait</p>
-          <div className="mt-4 aspect-[3/4] border border-line bg-mist">
-            <svg viewBox="0 0 300 400" className="h-full w-full text-moss" aria-hidden>
-              <rect width="300" height="400" fill="#e7eee8" />
-              <circle cx="150" cy="150" r="54" fill="#f7f4ee" />
-              <path d="M78 330 C 90 250, 120 230, 150 230 C 180 230, 210 250, 222 330" fill="#24382e" />
-              <path d="M150 230 C 120 180, 130 120, 150 108 C 176 122, 178 180, 150 230" fill="#c4a574" fillOpacity="0.7" />
-              <path d="M40 360 C 70 300, 90 280, 110 300" fill="none" stroke="#3d5a48" strokeWidth="2" />
-              <path d="M100 320 C 70 300, 60 270, 78 250 C 96 280, 104 300, 102 318" fill="#3d5a48" />
-            </svg>
-          </div>
-          <p className="mt-3 text-xs leading-relaxed text-ink/60">
-            Illustrated stand-in. Swap in a photograph when the brand belongs to a real person. Do not imply this drawing is a likeness of someone specific.
-          </p>
+        <aside className="min-w-0 md:col-span-4 md:col-start-9">
+          <p className="text-[11px] uppercase tracking-[0.2em] text-leaf">Two rooms</p>
+          <figure className="mt-4 overflow-hidden border border-line">
+            <Image
+              src="/media/malorfa-boardroom.png"
+              alt="Malorfa in the boardroom"
+              width={1280}
+              height={720}
+              className="aspect-[4/5] w-full object-cover object-[70%_center]"
+            />
+            <figcaption className="px-4 py-3 text-xs leading-relaxed text-ink/60">
+              The advisory room. The glasshouse is the other half of the same practice — plants, not philanthropy.
+            </figcaption>
+          </figure>
         </aside>
       </article>
 

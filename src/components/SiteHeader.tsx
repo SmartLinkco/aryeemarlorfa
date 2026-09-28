@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
@@ -37,9 +38,15 @@ export function SiteHeader() {
     <>
     <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between gap-3 px-4 md:px-10">
-        <Link href="/" className="group inline-flex min-h-11 items-center gap-2 font-serif text-xl tracking-tight">
-          <LeafMark className="h-4 w-4 text-moss" />
-          Ava Reed
+        <Link href="/" className="inline-flex min-h-11 items-center">
+          <Image
+            src="/brand/malorfa-logo.png"
+            alt="Malorfa"
+            width={559}
+            height={136}
+            priority
+            className="h-7 w-auto max-w-[46vw] sm:h-9"
+          />
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm lg:flex" aria-label="Primary">

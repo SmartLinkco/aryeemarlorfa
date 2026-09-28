@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Books",
   description:
-    "Published works by Ava Reed — fictional titles, excerpts, speaking topics, and press placeholders from Placeholder Press.",
+    "Published works by Malorfa — fictional titles, excerpts, speaking topics, and press placeholders from Placeholder Press.",
   path: "/books",
 });
 

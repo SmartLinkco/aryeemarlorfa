@@ -20,14 +20,14 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Ava Reed — Risk, plants, travel, and books",
-    template: "%s · Ava Reed",
+    default: `${site.name} — Risk, plants, travel, and books`,
+    template: `%s · ${site.name}`,
   },
   description: site.description,
   applicationName: site.name,
   icons: { icon: "/favicon.svg" },
   openGraph: {
-    title: "Ava Reed — Risk, plants, travel, and books",
+    title: `${site.name} — Risk, plants, travel, and books`,
     description: site.description,
     siteName: site.name,
     locale: "en_US",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ava Reed — Risk, plants, travel, and books",
+    title: `${site.name} — Risk, plants, travel, and books`,
     description: site.description,
   },
 };

@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Advisory",
   description:
-    "Fictional risk and insurance advisory offerings, a four-step process, illustrative scenarios, and questions — Reed Advisory is not a licensed practice.",
+    "Fictional risk and insurance advisory offerings, a four-step process, illustrative scenarios, and questions — Malorfa is not a licensed practice.",
   path: "/services",
 });
 
@@ -19,7 +19,7 @@ export default function ServicesPage() {
         plate="02"
         kicker="Advisory"
         title="Clearer risk conversations."
-        dek="Reed Advisory is the consulting room of this brand: corporate risk and insurance, discussed in language a leadership team can reuse. The practice below is a prototype, not a solicitation."
+        dek="This is Malorfa’s consulting room: corporate risk and insurance, discussed in language a leadership team can reuse. The practice below is a prototype, not a solicitation."
       />
 
       <div className="mx-auto max-w-[1200px] px-5 py-5 md:px-10">

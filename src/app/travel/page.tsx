@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Travel",
   description:
-    "Solo travel essays by Ava Reed — a magazine-style journal of fictional field notes, with plants that appear along the road.",
+    "Solo travel essays by Malorfa — a magazine-style journal of fictional field notes, with plants that appear along the road.",
   path: "/travel",
 });
 

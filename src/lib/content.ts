@@ -11,27 +11,31 @@ export const topics: { value: Topic; label: string }[] = [
 export const pillars = [
   {
     num: "01",
-    title: "Advisory",
+    kicker: "Advisory",
+    title: "Risk & insurance",
     href: "/services",
-    text: "Risk and insurance conversations for leadership teams who want clearer choices, not louder alarms.",
+    text: "Corporate risk and insurance conversations for leadership teams who want clearer choices, not louder alarms.",
   },
   {
     num: "02",
-    title: "Plants",
+    kicker: "Plants",
+    title: "Plant-tropist",
     href: "/plants",
-    text: "A plant-tropist’s practice: collection notes, care habits, and a standing affection for anything that leans toward light.",
+    text: "A private practice of living plants — collection, care, and the lean toward light. A plant lover’s room, not a charity or volunteer program.",
   },
   {
     num: "03",
-    title: "Travel",
+    kicker: "Travel",
+    title: "Solo travel",
     href: "/travel",
-    text: "Solo journeys written as field notes — cities, trains, and the plants that show up along the way.",
+    text: "Journeys taken alone, written as field notes: cities, trains, and the plants that appear along the road.",
   },
   {
     num: "04",
-    title: "Books",
+    kicker: "Books",
+    title: "Author",
     href: "/books",
-    text: "Essays and journals on attention, risk, glasshouses, and moving through the world alone.",
+    text: "Published essays and journals on attention, risk, glasshouses, and moving through the world alone.",
   },
 ] as const;
 
@@ -99,7 +103,7 @@ export const scenarios = [
 export const serviceFaqs = [
   {
     q: "Is this insurance advice or a solicitation?",
-    a: "No. Reed Advisory is a fictional practice built for this prototype. The pages describe a way of working. They are not advice, a quote, a policy, or a claim that anyone is licensed.",
+    a: "No. Malorfa is a fictional brand built for this prototype. The pages describe a way of working. They are not advice, a quote, a policy, or a claim that anyone is licensed.",
   },
   {
     q: "Who are the conversations for?",
@@ -210,7 +214,7 @@ export function tipIndex(date = new Date()) {
 
 export const plants = [
   {
-    name: "Reed fig",
+    name: "Study fig",
     latin: "Ficus lyrata",
     room: "North study",
     note: "A broad fiddle-leaf kept slightly root-bound. It sulks if moved, and rewards staying put.",
@@ -428,7 +432,7 @@ export const timeline = [
   {
     label: "The glasshouse",
     title: "Becoming a plant-tropist",
-    text: "Plants arrived as a counterweight and stayed as a discipline. A plant-tropist, in Ava’s usage, is simply a person oriented toward living green things: their lean, their thirst, their refusal to perform on a human calendar.",
+    text: "Plants arrived as a counterweight and stayed as a discipline. A plant-tropist, in Malorfa’s usage, is simply a person oriented toward living green things: their lean, their thirst, their refusal to perform on a human calendar. It is not philanthropy.",
   },
   {
     label: "The road",

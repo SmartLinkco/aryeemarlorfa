@@ -15,28 +15,31 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-20" aria-labelledby="pillars-title">
-        <h2 id="pillars-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
-          Four rooms, one practice
-        </h2>
-        <p className="mt-3 max-w-xl text-ink/70">
-          The work, the glasshouse, the road, and the page are not side projects of each other. They are how attention gets practiced.
-        </p>
-        <ol className="mt-10">
-          {pillars.map((pillar) => (
-            <li key={pillar.href} className="group border-t border-line">
-              <Link href={pillar.href} className="grid gap-3 py-7 md:grid-cols-12 md:items-center">
-                <span className="font-serif text-2xl text-brass md:col-span-2">{pillar.num}</span>
-                <span className="inline-flex items-center gap-2 font-serif text-2xl tracking-tight sm:text-3xl md:col-span-3">
-                  {pillar.title}
-                  <LeafMark className="h-5 w-5 text-moss" />
-                </span>
-                <span className="text-sm leading-relaxed text-ink/75 md:col-span-5">{pillar.text}</span>
-                <span className="text-sm text-leaf md:col-span-2 md:text-right">Enter</span>
-              </Link>
-            </li>
-          ))}
-        </ol>
+      <section className="border-b border-line" aria-labelledby="pillars-title">
+        <div className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-16">
+          <h2 id="pillars-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
+            Four rooms, one practice
+          </h2>
+          <p className="mt-3 max-w-xl text-ink/70">
+            Advisory, plants, solo travel, and books share one brand. They are how attention gets practiced — not side projects, and not a charity.
+          </p>
+          <ul className="mt-8 grid grid-cols-1 gap-px overflow-hidden border border-ink/15 bg-ink/15 sm:grid-cols-2 lg:grid-cols-4">
+            {pillars.map((pillar) => (
+              <li key={pillar.href} className="min-w-0 bg-paper">
+                <Link href={pillar.href} className="flex h-full min-h-44 flex-col gap-3 p-5 transition hover:bg-foam">
+                  <span className="text-[11px] uppercase tracking-[0.18em] text-brass">
+                    {pillar.num} — {pillar.kicker}
+                  </span>
+                  <span className="inline-flex items-center gap-2 font-serif text-2xl tracking-tight">
+                    {pillar.title}
+                    <LeafMark className="h-4 w-4 shrink-0 text-moss" />
+                  </span>
+                  <span className="text-sm leading-relaxed text-ink/75">{pillar.text}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <section className="border-t border-line bg-cream" aria-labelledby="featured-title">

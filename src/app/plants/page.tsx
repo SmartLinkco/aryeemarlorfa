@@ -9,7 +9,7 @@ import { pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Plants",
   description:
-    "Ava Reed’s fictional plant collection, everyday care notes, and a light partner-nursery inquiry list — a plant-tropist’s room, not a shop.",
+    "Malorfa’s fictional plant collection, everyday care notes, and a light partner-nursery inquiry list — a plant-tropist’s room, not a shop or a charity.",
   path: "/plants",
 });
 

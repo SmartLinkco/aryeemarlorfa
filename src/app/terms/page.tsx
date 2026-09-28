@@ -3,7 +3,7 @@ import { pageMeta, site } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Terms",
-  description: "Placeholder terms for the Ava Reed website. The brand, books, and advisory practice are fictional.",
+  description: "Placeholder terms for the Malorfa website. The brand, books, and advisory practice are fictional.",
   path: "/terms",
 });
 

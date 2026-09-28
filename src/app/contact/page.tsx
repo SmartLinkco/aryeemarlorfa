@@ -6,7 +6,7 @@ import { site, pageMeta } from "@/lib/site";
 export const metadata = pageMeta({
   title: "Contact",
   description:
-    "Write Ava Reed about consulting, speaking, plants, or media. The form is a browser-only demonstration, with an email and calendar placeholder.",
+    "Write Malorfa about consulting, speaking, plants, or media. The form is a browser-only demonstration, with an email and calendar placeholder.",
   path: "/contact",
 });
 

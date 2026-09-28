@@ -3,7 +3,7 @@ import { pageMeta, site } from "@/lib/site";
 
 export const metadata = pageMeta({
   title: "Privacy",
-  description: "Placeholder privacy note for the Ava Reed website prototype. The forms do not transmit personal data.",
+  description: "Placeholder privacy note for the Malorfa website prototype. The forms do not transmit personal data.",
   path: "/privacy",
 });
 
