@@ -24,14 +24,14 @@ export default function TravelPage() {
         dek="A journal of solo trips. The places are real; the essays are fiction written for this brand, ready to be swapped for true dispatches."
       />
 
-      <section className="mx-auto max-w-[1200px] px-6 py-14 md:px-10">
+      <section className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-14">
         <Link href={`/travel/${lead.slug}`} className="card-lift group grid overflow-hidden border border-line md:grid-cols-12">
           <div className="md:col-span-7">
             <Scene variant={lead.scene} className="h-72 w-full md:h-full" />
           </div>
           <div className="flex flex-col justify-center p-6 md:col-span-5 md:p-10">
             <p className="text-[11px] uppercase tracking-[0.2em] text-leaf">Featured · {lead.place}</p>
-            <h2 className="mt-3 font-serif text-4xl tracking-tight">{lead.title}</h2>
+            <h2 className="mt-3 font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">{lead.title}</h2>
             <p className="mt-4 text-sm leading-relaxed text-ink/75">{lead.excerpt}</p>
             <p className="mt-6 inline-flex items-center gap-2 text-sm">
               Read the story
@@ -43,13 +43,13 @@ export default function TravelPage() {
         <ul className="mt-6 grid gap-4 md:grid-cols-2">
           {rest.map((story) => (
             <li key={story.slug}>
-              <Link href={`/travel/${story.slug}`} className="card-lift group block border border-line bg-foam">
+              <Link href={`/travel/${story.slug}`} className="card-lift group block overflow-hidden border border-line bg-foam">
                 <Scene variant={story.scene} className="h-52 w-full" />
                 <div className="p-5">
                   <p className="text-[11px] uppercase tracking-[0.18em] text-leaf">
                     {story.place} · {story.season} · {story.minutes} min
                   </p>
-                  <h2 className="mt-2 inline-flex items-center gap-2 font-serif text-3xl tracking-tight">
+                  <h2 className="mt-2 inline-flex items-center gap-2 font-serif text-2xl tracking-tight sm:text-3xl">
                     {story.title}
                     <LeafMark className="h-4 w-4 text-moss" />
                   </h2>
@@ -62,9 +62,9 @@ export default function TravelPage() {
       </section>
 
       <section className="border-t border-line bg-mist/50" aria-labelledby="road-plants-title">
-        <div className="mx-auto grid max-w-[1200px] gap-8 px-6 py-16 md:grid-cols-12 md:px-10">
+        <div className="mx-auto grid max-w-[1200px] gap-6 px-5 py-12 md:grid-cols-12 md:px-10 md:py-16">
           <div className="md:col-span-4">
-            <h2 id="road-plants-title" className="font-serif text-4xl tracking-tight">
+            <h2 id="road-plants-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
               Plants on the road
             </h2>
           </div>

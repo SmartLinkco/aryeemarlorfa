@@ -11,7 +11,7 @@ const socials = [
 export function SiteFooter() {
   return (
     <footer className="bg-moss text-cream">
-      <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-16 md:grid-cols-12 md:px-10">
+      <div className="mx-auto grid max-w-[1200px] gap-10 px-5 py-12 md:grid-cols-12 md:px-10 md:py-16">
         <div className="md:col-span-5">
           <p className="font-serif text-3xl tracking-tight">Ava Reed</p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-sage">
@@ -24,19 +24,19 @@ export function SiteFooter() {
             Signup is a demonstration. It does not send email or store an address on a server.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-8 text-sm md:col-span-7 md:grid-cols-3">
+        <div className="grid gap-8 text-sm sm:grid-cols-3 md:col-span-7">
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-brass-soft">Visit</p>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-2">
               {nav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="text-cream/90 hover:text-white">
+                  <Link href={item.href} className="inline-flex min-h-11 items-center text-cream/90 hover:text-white">
                     {item.label}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/contact" className="text-cream/90 hover:text-white">
+                <Link href="/contact" className="inline-flex min-h-11 items-center text-cream/90 hover:text-white">
                   Contact
                 </Link>
               </li>
@@ -44,28 +44,28 @@ export function SiteFooter() {
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-brass-soft">Social</p>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-2">
               {socials.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className="text-cream/90 hover:text-white" rel="noreferrer">
+                  <a href={item.href} className="inline-flex min-h-11 items-center text-cream/90 hover:text-white" rel="noreferrer">
                     {item.label}
                     <span className="sr-only"> (placeholder)</span>
                   </a>
                 </li>
               ))}
             </ul>
-            <p className="mt-3 text-xs text-sage/80">Profiles are placeholders.</p>
+            <p className="text-xs text-sage/80">Profiles are placeholders.</p>
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-brass-soft">Legal</p>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-2">
               <li>
-                <Link href="/privacy" className="text-cream/90 hover:text-white">
+                <Link href="/privacy" className="inline-flex min-h-11 items-center text-cream/90 hover:text-white">
                   Privacy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-cream/90 hover:text-white">
+                <Link href="/terms" className="inline-flex min-h-11 items-center text-cream/90 hover:text-white">
                   Terms
                 </Link>
               </li>
@@ -79,7 +79,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-cream/10">
-        <p className="mx-auto max-w-[1200px] px-6 py-5 text-xs leading-relaxed text-sage/80 md:px-10">
+        <p className="mx-auto max-w-[1200px] px-5 py-5 text-xs leading-relaxed text-sage/80 md:px-10">
           {site.disclaimer}
         </p>
       </div>

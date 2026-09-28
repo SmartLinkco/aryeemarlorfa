@@ -36,6 +36,14 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   text-rendering: optimizeLegibility;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+svg,
+img,
+video {
+  max-width: 100%;
 }
 
 ::selection {
@@ -167,10 +175,16 @@ button:hover .leaf-rustle {
 .prose-reed p:first-of-type::first-letter {
   font-family: var(--font-serif);
   float: left;
-  font-size: 3.3rem;
+  font-size: 2.6rem;
   line-height: 0.8;
   padding-right: 0.12em;
   color: var(--color-moss);
+}
+
+@media (min-width: 768px) {
+  .prose-reed p:first-of-type::first-letter {
+    font-size: 3.3rem;
+  }
 }
 
 .prose-reed h2 {
@@ -178,6 +192,37 @@ button:hover .leaf-rustle {
   font-size: 1.8rem;
   margin-top: 2rem;
   letter-spacing: -0.02em;
+}
+
+/* Phones and coarse pointers: keep the picture, drop hover-only motion and scroll tricks. */
+@media (max-width: 767px), (hover: none) {
+  .scroll-leaf {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .parallax-panel,
+  .parallax-panel:hover {
+    transform: none !important;
+  }
+
+  .ray-drift {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .card-lift,
+  .card-lift:hover {
+    transform: none;
+  }
+
+  .leaf-rustle,
+  .group:hover .leaf-rustle,
+  .leaf-rustle:hover,
+  a:hover .leaf-rustle,
+  button:hover .leaf-rustle {
+    animation: none !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -15,8 +15,8 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="mx-auto max-w-[1200px] px-6 py-20 md:px-10" aria-labelledby="pillars-title">
-        <h2 id="pillars-title" className="font-serif text-4xl tracking-tight">
+      <section className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-20" aria-labelledby="pillars-title">
+        <h2 id="pillars-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
           Four rooms, one practice
         </h2>
         <p className="mt-3 max-w-xl text-ink/70">
@@ -27,7 +27,7 @@ export default function HomePage() {
             <li key={pillar.href} className="group border-t border-line">
               <Link href={pillar.href} className="grid gap-3 py-7 md:grid-cols-12 md:items-center">
                 <span className="font-serif text-2xl text-brass md:col-span-2">{pillar.num}</span>
-                <span className="inline-flex items-center gap-2 font-serif text-3xl tracking-tight md:col-span-3">
+                <span className="inline-flex items-center gap-2 font-serif text-2xl tracking-tight sm:text-3xl md:col-span-3">
                   {pillar.title}
                   <LeafMark className="h-5 w-5 text-moss" />
                 </span>
@@ -40,33 +40,33 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-line bg-cream" aria-labelledby="featured-title">
-        <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-20 md:grid-cols-2 md:px-10">
+        <div className="mx-auto grid max-w-[1200px] gap-8 px-5 py-12 md:grid-cols-2 md:gap-12 md:px-10 md:py-20">
           <div>
             <p className="text-[11px] uppercase tracking-[0.22em] text-leaf">Featured book</p>
-            <h2 id="featured-title" className="mt-3 font-serif text-4xl tracking-tight">
+            <h2 id="featured-title" className="mt-3 font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
               {book.title}
             </h2>
             <p className="mt-4 max-w-md text-ink/75">{book.dek}</p>
-            <blockquote className="mt-6 border-l border-brass pl-4 font-serif text-xl leading-snug text-moss">
+            <blockquote className="mt-6 border-l border-brass pl-4 font-serif text-lg leading-snug text-moss sm:text-xl">
               {book.excerpt}
             </blockquote>
-            <Link href={`/books/${book.slug}`} className="mt-6 inline-flex items-center gap-2 text-sm underline decoration-ink/30 underline-offset-4">
+            <Link href={`/books/${book.slug}`} className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm underline decoration-ink/30 underline-offset-4">
               Read the plate
               <LeafMark className="h-4 w-4" />
             </Link>
           </div>
-          <Link href={`/books/${book.slug}`} className="card-lift block max-w-sm border border-line">
+          <Link href={`/books/${book.slug}`} className="card-lift mx-auto block w-full max-w-[240px] border border-line sm:max-w-sm md:mx-0">
             <BookCover title={book.title} kind={book.kind} year={book.year} tone={book.tone} />
           </Link>
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-6 py-20 md:px-10" aria-labelledby="journal-title">
-        <div className="flex items-end justify-between gap-4">
-          <h2 id="journal-title" className="font-serif text-4xl tracking-tight">
+      <section className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-20" aria-labelledby="journal-title">
+        <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <h2 id="journal-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
             From the journal
           </h2>
-          <Link href="/travel" className="text-sm underline decoration-ink/30 underline-offset-4">
+          <Link href="/travel" className="inline-flex min-h-11 items-center text-sm underline decoration-ink/30 underline-offset-4">
             All journeys
           </Link>
         </div>
@@ -83,12 +83,12 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-line" aria-labelledby="collection-title">
-        <div className="mx-auto max-w-[1200px] px-6 py-20 md:px-10">
-          <div className="flex items-end justify-between gap-4">
-            <h2 id="collection-title" className="font-serif text-4xl tracking-tight">
+        <div className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-20">
+          <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <h2 id="collection-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
               In the collection
             </h2>
-            <Link href="/plants" className="text-sm underline decoration-ink/30 underline-offset-4">
+            <Link href="/plants" className="inline-flex min-h-11 items-center text-sm underline decoration-ink/30 underline-offset-4">
               All plants
             </Link>
           </div>
@@ -115,14 +115,14 @@ export default function HomePage() {
 
       <Testimonials items={testimonials} />
 
-      <section className="mx-auto flex max-w-[1200px] flex-col items-start gap-6 px-6 py-20 md:flex-row md:items-end md:justify-between md:px-10">
+      <section className="mx-auto flex max-w-[1200px] flex-col items-stretch gap-6 px-5 py-12 sm:items-start md:flex-row md:items-end md:justify-between md:px-10 md:py-20">
         <div>
-          <h2 className="font-serif text-4xl tracking-tight">If the rooms overlap, write.</h2>
+          <h2 className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">If the rooms overlap, write.</h2>
           <p className="mt-3 max-w-lg text-ink/70">
             Consulting, speaking, plants, or media — the form sorts the note. It does not send it anywhere yet.
           </p>
         </div>
-        <Link href="/contact" className="group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm text-cream hover:bg-moss">
+        <Link href="/contact" className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-ink px-5 text-sm text-cream hover:bg-moss sm:w-auto">
           Contact
           <LeafMark className="h-4 w-4" />
         </Link>

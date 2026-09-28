@@ -44,6 +44,7 @@ export const viewport: Viewport = {
   themeColor: "#f3eee6",
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -54,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <SiteHeader />
-        <main id="main" tabIndex={-1} className="outline-none">
+        <main id="main" tabIndex={-1} className="overflow-x-clip outline-none">
           {children}
         </main>
         <SiteFooter />

@@ -28,19 +28,19 @@ export default async function StoryPage({ params }: { params: Promise<{ slug: st
   return (
     <article>
       <header className="border-b border-line">
-        <div className="mx-auto max-w-[1200px] px-6 py-14 md:px-10">
+        <div className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-14">
           <p className="text-[11px] uppercase tracking-[0.22em] text-leaf">
-            <Link href="/travel" className="underline decoration-leaf/40 underline-offset-4">
+            <Link href="/travel" className="inline-flex min-h-11 items-center underline decoration-leaf/40 underline-offset-4">
               Travel
             </Link>{" "}
             · {story.place} · {story.season} · {story.minutes} min read
           </p>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-[0.95] tracking-tight md:text-6xl">{story.title}</h1>
+          <h1 className="mt-3 max-w-3xl font-serif text-[2.15rem] leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">{story.title}</h1>
           <p className="mt-5 max-w-2xl text-lg text-ink/75">{story.excerpt}</p>
         </div>
         <Scene variant={story.scene} className="h-72 w-full md:h-96" />
       </header>
-      <div className="mx-auto grid max-w-[1200px] gap-12 px-6 py-14 md:grid-cols-12 md:px-10">
+      <div className="mx-auto grid max-w-[1200px] gap-8 px-5 py-10 md:grid-cols-12 md:gap-12 md:px-10 md:py-14">
         <div className="prose-reed md:col-span-7">
           {story.paragraphs.map((paragraph) => (
             <p key={paragraph.slice(0, 24)}>{paragraph}</p>

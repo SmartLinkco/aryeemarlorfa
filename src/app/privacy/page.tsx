@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         title="What this prototype keeps."
         dek="A short legal stub. Replace it with a real notice before collecting anyone’s information."
       />
-      <div className="prose-reed mx-auto max-w-[760px] px-6 py-14 md:px-10">
+      <div className="prose-reed mx-auto max-w-[760px] px-5 py-10 md:px-10 md:py-14">
         <p>
           The contact form and the newsletter field run only in your browser. They do not send email, do not call an API, and do not write to a database. Refreshing the page clears what you typed.
         </p>

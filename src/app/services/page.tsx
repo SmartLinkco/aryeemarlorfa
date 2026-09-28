@@ -22,14 +22,14 @@ export default function ServicesPage() {
         dek="Reed Advisory is the consulting room of this brand: corporate risk and insurance, discussed in language a leadership team can reuse. The practice below is a prototype, not a solicitation."
       />
 
-      <div className="mx-auto max-w-[1200px] px-6 py-6 md:px-10">
+      <div className="mx-auto max-w-[1200px] px-5 py-5 md:px-10">
         <p className="border border-brass/40 bg-cream px-4 py-3 text-sm leading-relaxed text-ink/80">
           Illustrative only. These pages are not insurance advice, a quote, a policy comparison, or evidence of licensure. Replace them when a real practice, with its real permissions, exists.
         </p>
       </div>
 
-      <section className="mx-auto max-w-[1200px] px-6 py-12 md:px-10" aria-labelledby="offerings-title">
-        <h2 id="offerings-title" className="font-serif text-4xl tracking-tight">
+      <section className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-12" aria-labelledby="offerings-title">
+        <h2 id="offerings-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
           Ways to work
         </h2>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
@@ -44,8 +44,8 @@ export default function ServicesPage() {
       </section>
 
       <section className="border-t border-line bg-cream" aria-labelledby="process-title">
-        <div className="mx-auto max-w-[1200px] px-6 py-16 md:px-10">
-          <h2 id="process-title" className="font-serif text-4xl tracking-tight">
+        <div className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-16">
+          <h2 id="process-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
             How an engagement moves
           </h2>
           <ol className="mt-10 grid gap-6 md:grid-cols-4">
@@ -60,8 +60,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-6 py-16 md:px-10" aria-labelledby="scenarios-title">
-        <h2 id="scenarios-title" className="font-serif text-4xl tracking-tight">
+      <section className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-16" aria-labelledby="scenarios-title">
+        <h2 id="scenarios-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
           Illustrative scenarios
         </h2>
         <p className="mt-3 max-w-2xl text-sm text-ink/70">
@@ -80,8 +80,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[800px] px-6 pb-8 md:px-10" aria-labelledby="faq-title">
-        <h2 id="faq-title" className="font-serif text-4xl tracking-tight">
+      <section className="mx-auto max-w-[800px] px-5 pb-10 md:px-10" aria-labelledby="faq-title">
+        <h2 id="faq-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
           Questions worth asking first
         </h2>
         <div className="mt-8">
@@ -89,7 +89,7 @@ export default function ServicesPage() {
         </div>
         <Link
           href="/contact?topic=consulting"
-          className="mt-8 inline-flex rounded-full bg-ink px-5 py-3 text-sm text-cream hover:bg-moss"
+          className="mt-8 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-ink px-5 text-sm text-cream hover:bg-moss sm:w-auto"
         >
           Begin a conversation
         </Link>

@@ -22,9 +22,15 @@ function Leaf({
   );
 }
 
-export function GrowingPlant({ progress }: { progress: MotionValue<number> }) {
+export function GrowingPlant({
+  progress,
+  className = "h-full w-full",
+}: {
+  progress: MotionValue<number>;
+  className?: string;
+}) {
   return (
-    <svg viewBox="0 0 140 520" className="h-full w-full text-moss" aria-hidden>
+    <svg viewBox="0 0 140 520" className={`${className} text-moss`} aria-hidden>
       <path
         pathLength={1}
         className="stem-draw"

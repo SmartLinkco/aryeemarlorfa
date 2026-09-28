@@ -26,19 +26,19 @@ export default async function BookPage({ params }: { params: Promise<{ slug: str
   const others = books.filter((item) => item.slug !== book.slug);
 
   return (
-    <article className="mx-auto max-w-[1200px] px-6 py-14 md:px-10">
+    <article className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-14">
       <p className="text-[11px] uppercase tracking-[0.22em] text-leaf">
-        <Link href="/books" className="underline decoration-leaf/40 underline-offset-4">
+        <Link href="/books" className="inline-flex min-h-11 items-center underline decoration-leaf/40 underline-offset-4">
           Books
         </Link>{" "}
         · {book.kind} · {book.year}
       </p>
       <div className="mt-8 grid items-start gap-10 md:grid-cols-12">
-        <div className="md:col-span-5">
+        <div className="mx-auto w-full max-w-[240px] md:col-span-5 md:mx-0 md:max-w-none">
           <BookCover title={book.title} kind={book.kind} year={book.year} tone={book.tone} className="border border-line" />
         </div>
         <div className="md:col-span-7">
-          <h1 className="font-serif text-5xl tracking-tight">{book.title}</h1>
+          <h1 className="font-serif text-[2.15rem] leading-[1.05] tracking-tight sm:text-5xl">{book.title}</h1>
           <p className="mt-4 text-lg text-ink/75">{book.dek}</p>
           <p className="mt-6 text-sm leading-relaxed text-ink/80">{book.synopsis}</p>
           <blockquote className="mt-8 border border-line bg-cream p-6">

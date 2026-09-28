@@ -23,7 +23,7 @@ export function DualIdentity() {
 
   return (
     <figure className="relative overflow-hidden border border-ink/10 bg-ink">
-      <div className={`grid min-h-[420px] grid-cols-1 sm:min-h-[520px] sm:grid-cols-2 ${showVideo ? "invisible" : ""}`}>
+      <div className={`grid min-h-[240px] grid-cols-2 sm:min-h-[520px] ${showVideo ? "invisible" : ""}`}>
         <div className="relative overflow-hidden bg-[#1c2822] text-cream">
           <div className="absolute inset-0 opacity-40">
             <div className="absolute left-[18%] top-0 h-full w-px bg-cream/30" />
@@ -33,7 +33,7 @@ export function DualIdentity() {
           <div className="lamp-pulse absolute left-1/2 top-[18%] h-28 w-28 -translate-x-1/2 rounded-full bg-[#e7d7b8] blur-2xl" />
           <div className="absolute inset-x-[12%] bottom-[18%] h-16 origin-bottom -skew-x-6 border border-brass-soft/40 bg-cream/5" />
           <div className="absolute inset-x-[18%] bottom-[14%] h-3 bg-brass/30" />
-          <figcaption className="absolute left-5 top-5 text-[10px] uppercase tracking-[0.24em] text-cream/80">
+          <figcaption className="absolute left-3 top-3 text-[9px] uppercase tracking-[0.14em] text-cream/80 sm:left-5 sm:top-5 sm:text-[10px] sm:tracking-[0.24em]">
             01 — Boardroom
           </figcaption>
         </div>
@@ -54,7 +54,7 @@ export function DualIdentity() {
               <path d="M70 230 C 40 220, 28 196, 40 176 C 58 194, 70 210, 74 228" fill="currentColor" />
             </g>
           </svg>
-          <figcaption className="absolute right-5 top-5 text-[10px] uppercase tracking-[0.24em]">
+          <figcaption className="absolute right-3 top-3 text-[9px] uppercase tracking-[0.14em] sm:right-5 sm:top-5 sm:text-[10px] sm:tracking-[0.24em]">
             02 — Glasshouse
           </figcaption>
         </div>
@@ -79,7 +79,7 @@ export function DualIdentity() {
         Two rooms of the same practice: a quiet boardroom and a glasshouse. A silent looping film can replace this
         illustrated poster when public/media/dual-identity.mp4 is added. The film never plays with sound.
       </figcaption>
-      <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/55 to-transparent px-5 py-4 text-sm text-cream">
+      <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/70 to-transparent px-3 py-2.5 text-xs leading-snug text-cream sm:px-5 sm:py-4 sm:text-sm">
         Two rooms. One practice of attention.
       </p>
     </figure>

@@ -34,9 +34,10 @@ export function SiteHeader() {
   }, [open]);
 
   return (
+    <>
     <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between gap-4 px-6 md:px-10">
-        <Link href="/" className="group inline-flex items-center gap-2 font-serif text-xl tracking-tight">
+      <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between gap-3 px-4 md:px-10">
+        <Link href="/" className="group inline-flex min-h-11 items-center gap-2 font-serif text-xl tracking-tight">
           <LeafMark className="h-4 w-4 text-moss" />
           Ava Reed
         </Link>
@@ -58,49 +59,56 @@ export function SiteHeader() {
           <SoundToggle />
           <Link
             href="/contact"
-            className="hidden rounded-full bg-ink px-4 py-2 text-sm text-cream hover:bg-moss sm:inline-flex"
+            className="hidden min-h-11 items-center rounded-full bg-ink px-4 text-sm text-cream hover:bg-moss sm:inline-flex"
           >
             Contact
           </Link>
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/15 lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
           >
             <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
-            <span aria-hidden className="flex w-4 flex-col gap-1">
-              <span className={`h-px bg-ink transition ${open ? "translate-y-[3px] rotate-45" : ""}`} />
-              <span className={`h-px bg-ink transition ${open ? "-translate-y-[2px] -rotate-45" : ""}`} />
+            <span aria-hidden className="relative block h-3 w-4">
+              <span className={`absolute left-0 h-px w-4 bg-ink transition ${open ? "top-1.5 rotate-45" : "top-0"}`} />
+              <span className={`absolute left-0 top-1.5 h-px w-4 bg-ink transition ${open ? "opacity-0" : ""}`} />
+              <span className={`absolute left-0 h-px w-4 bg-ink transition ${open ? "top-1.5 -rotate-45" : "top-3"}`} />
             </span>
           </button>
         </div>
       </div>
 
+      </header>
       {open && (
-        <nav id="mobile-nav" className="border-t border-line bg-paper px-6 py-4 lg:hidden" aria-label="Mobile">
+        <nav
+          id="mobile-nav"
+          className="fixed inset-x-0 bottom-0 top-16 z-30 overflow-y-auto bg-paper px-5 pb-8 pt-2 lg:hidden"
+          aria-label="Mobile"
+        >
           <ul className="flex flex-col">
             {nav.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
                   aria-current={active(pathname, item.href) ? "page" : undefined}
-                  className="flex items-center justify-between border-b border-line py-3 font-serif text-2xl"
+                  className="flex min-h-14 items-center justify-between border-b border-line font-serif text-[1.75rem] tracking-tight"
                 >
                   {item.label}
                   <LeafMark className="h-4 w-4 text-moss" />
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href="/contact" className="flex py-3 font-serif text-2xl">
-                Contact
-              </Link>
-            </li>
           </ul>
+          <Link
+            href="/contact"
+            className="mt-8 flex min-h-12 items-center justify-center rounded-full bg-ink text-sm text-cream"
+          >
+            Contact
+          </Link>
         </nav>
       )}
-    </header>
+    </>
   );
 }

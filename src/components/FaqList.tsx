@@ -17,7 +17,7 @@ export function FaqList({ items }: { items: readonly { q: string; a: string }[] 
               <button
                 id={buttonId}
                 type="button"
-                className="flex w-full items-center justify-between gap-6 py-5 text-left font-serif text-xl tracking-tight"
+                className="flex min-h-14 w-full items-center justify-between gap-4 py-4 text-left font-serif text-lg leading-snug tracking-tight sm:text-xl"
                 aria-expanded={expanded}
                 aria-controls={panelId}
                 onClick={() => setOpen(expanded ? null : index)}

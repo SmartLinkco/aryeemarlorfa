@@ -42,7 +42,7 @@ export function NewsletterForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder="you@example.com"
-          className={`h-11 flex-1 rounded-full border px-4 text-sm outline-none ${
+          className={`h-12 min-h-12 flex-1 rounded-full border px-4 text-base outline-none ${
             light
               ? "border-ink/15 bg-foam text-ink placeholder:text-ink/40"
               : "border-cream/20 bg-ink/30 text-cream placeholder:text-cream/40"
@@ -50,7 +50,7 @@ export function NewsletterForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
         />
         <button
           type="submit"
-          className={`h-11 rounded-full px-5 text-sm ${light ? "bg-ink text-cream hover:bg-moss" : "bg-cream text-ink hover:bg-paper"}`}
+          className={`h-12 min-h-12 rounded-full px-5 text-sm ${light ? "bg-ink text-cream hover:bg-moss" : "bg-cream text-ink hover:bg-paper"}`}
         >
           Request notes
         </button>

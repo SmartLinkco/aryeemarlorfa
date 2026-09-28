@@ -19,10 +19,10 @@ export default function ContactPage() {
         title="A note is enough to begin."
         dek="Choose a topic so the request arrives sorted. Consulting, speaking, plants, media, or something that does not fit the list yet."
       />
-      <section className="mx-auto max-w-[1200px] px-6 py-14 md:px-10">
+      <section className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-14">
         <p className="mb-8 max-w-2xl text-sm text-ink/70">
           Messages stay on this page. For a real address, use{" "}
-          <a className="underline decoration-ink/30 underline-offset-4" href={`mailto:${site.email}`}>
+          <a className="inline-flex min-h-11 items-center underline decoration-ink/30 underline-offset-4" href={`mailto:${site.email}`}>
             {site.email}
           </a>
           . {site.disclaimer}

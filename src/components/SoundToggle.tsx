@@ -100,7 +100,7 @@ export function SoundToggle() {
       aria-pressed={on}
       aria-label={on ? "Stop soft rain sounds" : "Play soft rain sounds"}
       title={unavailable ? "Sound is unavailable in this browser" : "Soft rain, off until you choose it"}
-      className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs tracking-wide transition ${
+      className={`inline-flex h-11 min-w-11 items-center justify-center gap-2 rounded-full border px-2.5 text-xs tracking-wide transition sm:px-3 ${
         on ? "border-moss bg-mist text-moss" : "border-ink/15 text-ink/80 hover:border-ink/40"
       }`}
     >

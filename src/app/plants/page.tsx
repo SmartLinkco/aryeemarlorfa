@@ -30,7 +30,7 @@ export default function PlantsPage() {
         dek="A plant-tropist keeps a collection the way other people keep a practice: named, observed, occasionally forgiven. This gallery is a placeholder shelf."
       />
 
-      <section className="mx-auto max-w-[1200px] px-6 py-14 md:px-10" aria-labelledby="gallery-title">
+      <section className="mx-auto max-w-[1200px] px-5 py-10 md:px-10 md:py-14" aria-labelledby="gallery-title">
         <h2 id="gallery-title" className="sr-only">
           Collection
         </h2>
@@ -56,8 +56,8 @@ export default function PlantsPage() {
       </section>
 
       <section className="border-t border-line bg-cream" aria-labelledby="care-title">
-        <div className="mx-auto max-w-[1200px] px-6 py-16 md:px-10">
-          <h2 id="care-title" className="font-serif text-4xl tracking-tight">
+        <div className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-16">
+          <h2 id="care-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
             Care, kept short
           </h2>
           <ul className="mt-8 grid gap-4 md:grid-cols-4">
@@ -74,11 +74,11 @@ export default function PlantsPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1200px] px-6 py-16 md:px-10" aria-labelledby="nursery-title">
+      <section className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-16" aria-labelledby="nursery-title">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <p className="text-[11px] uppercase tracking-[0.2em] text-leaf">Partner nursery</p>
-            <h2 id="nursery-title" className="mt-3 font-serif text-4xl tracking-tight">
+            <h2 id="nursery-title" className="mt-3 font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
               Lumen & Leaf
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-ink/75">
@@ -86,7 +86,7 @@ export default function PlantsPage() {
             </p>
             <Link
               href="/contact?topic=plants"
-              className="mt-6 inline-flex rounded-full bg-ink px-5 py-3 text-sm text-cream hover:bg-moss"
+              className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-ink px-5 text-sm text-cream hover:bg-moss sm:w-auto"
             >
               Inquire about the list
             </Link>

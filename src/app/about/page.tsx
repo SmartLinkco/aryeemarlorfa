@@ -19,7 +19,7 @@ export default function AboutPage() {
         title="A life arranged as four rooms."
         dek="Corporate risk work, a plant practice, solo travel, and books. None of them is the hobby of the others. This page is the hallway between them."
       />
-      <article className="mx-auto grid max-w-[1200px] gap-12 px-6 py-16 md:grid-cols-12 md:px-10">
+      <article className="mx-auto grid max-w-[1200px] gap-8 px-5 py-10 md:grid-cols-12 md:gap-12 md:px-10 md:py-16">
         <div className="prose-reed md:col-span-7">
           <p>
             Ava Reed is a placeholder name for a real kind of person: someone whose days include board papers and watering cans, departure boards and manuscripts. The brand is built so those facts can share a typeface.
@@ -37,7 +37,7 @@ export default function AboutPage() {
             The books hold the rest still long enough to be reread. Placeholder Press, the imprint named on the covers, is part of the fiction — a shelf waiting for the owner of this site to replace it with the true one.
           </p>
         </div>
-        <aside className="md:col-span-4 md:col-start-9">
+        <aside className="mx-auto w-full max-w-[16rem] md:col-span-4 md:col-start-9 md:mx-0 md:max-w-none">
           <p className="text-[11px] uppercase tracking-[0.2em] text-leaf">Replace with a portrait</p>
           <div className="mt-4 aspect-[3/4] border border-line bg-mist">
             <svg viewBox="0 0 300 400" className="h-full w-full text-moss" aria-hidden>
@@ -56,8 +56,8 @@ export default function AboutPage() {
       </article>
 
       <section className="border-t border-line" aria-labelledby="timeline-title">
-        <div className="mx-auto max-w-[1200px] px-6 py-16 md:px-10">
-          <h2 id="timeline-title" className="font-serif text-4xl tracking-tight">
+        <div className="mx-auto max-w-[1200px] px-5 py-12 md:px-10 md:py-16">
+          <h2 id="timeline-title" className="font-serif text-[1.75rem] leading-[1.15] tracking-tight md:text-4xl">
             How the rooms were furnished
           </h2>
           <ol className="mt-10 grid gap-8 md:grid-cols-2">

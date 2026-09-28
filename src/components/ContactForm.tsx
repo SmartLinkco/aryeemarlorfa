@@ -48,7 +48,7 @@ export function ContactForm() {
             value={name}
             onChange={(event) => setName(event.target.value)}
             autoComplete="name"
-            className="mt-2 w-full border border-ink/15 bg-foam px-3 py-3 text-sm outline-none"
+            className="mt-2 min-h-12 w-full border border-ink/15 bg-foam px-3 py-3 text-base outline-none"
           />
           {errors.name && (
             <p role="alert" className="mt-1 text-sm text-clay">
@@ -67,7 +67,7 @@ export function ContactForm() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             autoComplete="email"
-            className="mt-2 w-full border border-ink/15 bg-foam px-3 py-3 text-sm outline-none"
+            className="mt-2 min-h-12 w-full border border-ink/15 bg-foam px-3 py-3 text-base outline-none"
           />
           {errors.email && (
             <p role="alert" className="mt-1 text-sm text-clay">
@@ -84,7 +84,7 @@ export function ContactForm() {
             name="topic"
             value={topic}
             onChange={(event) => setTopic(event.target.value as Topic)}
-            className="mt-2 w-full border border-ink/15 bg-foam px-3 py-3 text-sm outline-none"
+            className="mt-2 min-h-12 w-full border border-ink/15 bg-foam px-3 py-3 text-base outline-none"
           >
             {topics.map((item) => (
               <option key={item.value} value={item.value}>
@@ -103,7 +103,7 @@ export function ContactForm() {
             rows={6}
             value={message}
             onChange={(event) => setMessage(event.target.value)}
-            className="mt-2 w-full border border-ink/15 bg-foam px-3 py-3 text-sm outline-none"
+            className="mt-2 min-h-12 w-full border border-ink/15 bg-foam px-3 py-3 text-base outline-none"
           />
           {errors.message && (
             <p role="alert" className="mt-1 text-sm text-clay">
@@ -111,7 +111,7 @@ export function ContactForm() {
             </p>
           )}
         </div>
-        <button type="submit" className="rounded-full bg-ink px-6 py-3 text-sm text-cream hover:bg-moss">
+        <button type="submit" className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-ink px-6 text-sm text-cream hover:bg-moss sm:w-auto">
           Send placeholder note
         </button>
         {done && (
@@ -130,7 +130,7 @@ export function ContactForm() {
         </p>
         <button
           type="button"
-          className="mt-6 rounded-full border border-ink/20 px-5 py-2.5 text-sm hover:border-ink"
+          className="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-full border border-ink/20 px-5 text-sm hover:border-ink sm:w-auto"
           aria-expanded={calendarOpen}
           aria-controls="calendar-stub"
           onClick={() => setCalendarOpen((value) => !value)}
@@ -145,7 +145,7 @@ export function ContactForm() {
         )}
         <p className="mt-8 text-sm">
           Or write directly:{" "}
-          <a className="underline decoration-ink/30 underline-offset-4" href="mailto:hello@avareed.example">
+          <a className="inline-flex min-h-11 items-center underline decoration-ink/30 underline-offset-4" href="mailto:hello@avareed.example">
             hello@avareed.example
           </a>
         </p>

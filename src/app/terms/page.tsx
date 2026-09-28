@@ -16,7 +16,7 @@ export default function TermsPage() {
         title="How to read this site."
         dek="A stub, written so nobody mistakes the prototype for a regulated offer."
       />
-      <div className="prose-reed mx-auto max-w-[760px] px-6 py-14 md:px-10">
+      <div className="prose-reed mx-auto max-w-[760px] px-5 py-10 md:px-10 md:py-14">
         <p>
           {site.disclaimer} Book titles, the imprint Placeholder Press, the nursery Lumen & Leaf, testimonials, and travel essays are original fiction for the design.
         </p>

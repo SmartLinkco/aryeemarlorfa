@@ -76,7 +76,7 @@ export function Botanical({
 
 export function Scene({ variant, className = "" }: { variant: SceneVariant; className?: string }) {
   return (
-    <svg viewBox="0 0 640 400" className={className} aria-hidden preserveAspectRatio="xMidYMid slice">
+    <svg viewBox="0 0 640 400" className={`block max-w-full overflow-hidden ${className}`} aria-hidden preserveAspectRatio="xMidYMid slice">
       {variant === "coast" && (
         <>
           <rect width="640" height="400" fill="#d5e0d6" />
@@ -141,7 +141,7 @@ export function BookCover({
         <span>{year}</span>
       </div>
       <div>
-        <p className="font-serif text-3xl leading-none tracking-tight md:text-4xl">{title}</p>
+        <p className="font-serif text-[1.65rem] leading-none tracking-tight text-balance md:text-4xl">{title}</p>
         <div className="mt-4 h-px w-12 bg-brass-soft" />
       </div>
       <p className="text-[10px] uppercase tracking-[0.22em] text-cream/70">Placeholder Press</p>
